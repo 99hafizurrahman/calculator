@@ -116,7 +116,7 @@ buttons.addEventListener('click', function (e) {
       break;
 
     case 'equals':
-      result.innerHTML = eval(oldValue);
+      if (oldValue) result.innerHTML = eval(oldValue);
       oldValue = '';
       break;
 
